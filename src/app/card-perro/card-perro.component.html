@@ -1,0 +1,9 @@
+
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{perro.nombre}}</h5>
+      <input type="text" #nombre>
+      </div>
+    <img src="../../assets/{{perro.foto}}" class="card-img-bottom" alt="perrazo">
+    <button class="btn-success" (click)="modificar(nombre.value)" >Modificar</button>
+  </div>
