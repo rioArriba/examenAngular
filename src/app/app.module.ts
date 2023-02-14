@@ -8,6 +8,8 @@ import { CatalogoComponent } from './catalogo/catalogo.component';
 import { CardPerroComponent } from './card-perro/card-perro.component';
 import { ModificarComponent } from './modificar/modificar.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
+import { PadreDelDelTutuComponent } from './padre-del-del-tutu/padre-del-del-tutu.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { NavbarComponent } from './navbar/navbar.component';
     CatalogoComponent,
     CardPerroComponent,
     ModificarComponent,
-    NavbarComponent
+    NavbarComponent,
+    PadreDelDelTutuComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

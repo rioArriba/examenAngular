@@ -1,1 +1,11 @@
-<p>modificar works!</p>
+
+<br>
+<br>
+<p>Hola, soy El Programador...</p>
+<img *ngIf="laLola == 0" src="../../assets/tutu.jpg" style="width: 30vw;">
+<img *ngIf="laLola == 1" src="../../assets/tutu2.jpg" style="width: 30vw;">
+<img *ngIf="laLola == 2" src="../../assets/tutu3.jpg" style="width: 30vw;">
+<button (click)="cambio()">Quieres ver otro de estos?</button>
+<br>
+<button routerLink="/padre/{{laLola}}">Quieres conocer a su padre?</button>
+

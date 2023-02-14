@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./modificar.component.css']
 })
 export class ModificarComponent {
-
+laLola:number = 0
+  cambio() {
+    if(this.laLola < 2) {
+      this.laLola += 1
+    } else {
+      this.laLola = 0
+    }
+  }
 }

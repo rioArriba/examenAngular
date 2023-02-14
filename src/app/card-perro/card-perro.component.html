@@ -1,9 +1,9 @@
 
-<div class="card">
+<div class="card" style="width: 40vw;">
     <div class="card-body">
       <h5 class="card-title">{{perro.nombre}}</h5>
-      <input type="text" #nombre>
+      <input type="text" name="nombre" [(ngModel)]="perro.nombre">
       </div>
     <img src="../../assets/{{perro.foto}}" class="card-img-bottom" alt="perrazo">
-    <button class="btn-success" (click)="modificar(nombre.value)" >Modificar</button>
+    <button class="btn-success" (click)="modificar(perro.nombre)" >Modificar</button>
   </div>

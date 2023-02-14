@@ -1,3 +1,5 @@
-<app-card-perro *ngFor="let perro in perros"
-[perro]="perro"
-(modificarPerro)="modificar($event)"></app-card-perro>
+<div style="display:flex; flex-direction: row;">
+    <app-card-perro *ngFor="let perro of perros" [perro]="perro"
+        (modificarPerro)="modificar($event)">
+    </app-card-perro>
+    </div>
